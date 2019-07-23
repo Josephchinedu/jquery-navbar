@@ -1,0 +1,118 @@
+html, body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+body{
+	font-family: "Helvetica Neue",sans-serif;
+    font-weight: lighter;
+}
+
+header{
+	width: 100%;
+	height: 50vh;
+	background: url(https://wallpaper.wiki/wp-content/uploads/2017/05/wallpaper.wiki-Beautiful-Full-HD-Wallpaper-Download-Free-PIC-WPE0010098.jpg) no-repeat 50% 50%;
+	background-size: cover;
+}
+
+.logo{
+	line-height: 60px;
+	position: fixed;
+	float: left;
+	margin: 16px 46px;
+	color: #fff;
+	font-size: bold;
+	letter-spacing: 2px;
+	font-size: 20px;
+}
+
+nav{
+	position: fixed;
+	line-height: 60px;width: 100%;
+}
+
+nav ul{
+	line-height: 60px;
+	list-style: none;
+	overflow: hidden;
+	text-align: right;
+	color: #fff;
+	background: rgb(0, 0, 0, 0);
+	padding: 0;
+	margin: 0;
+	margin-right: 40px;
+	transition: 1s;
+}
+
+nav.black ul{
+	background: #000;
+}
+
+nav ul li {
+	padding: 16px 40px;
+	display: inline-block;
+}
+
+nav ul li a{
+	color: #fff;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+
+.content{
+	text-align: justify;
+	margin: 4em auto;
+	font-size: 20px;
+	line-height: 30px;
+	width: 94%;
+}
+
+.menu-icon{
+	line-height: 60px;
+	width: 100%;
+	background: #000;
+	text-align: right;
+	padding: 15px 24px;
+	box-sizing: border-box;
+	cursor: pointer;
+	display: none;
+
+
+}
+
+
+
+@media(max-width: 500px){
+	.logo{
+		position: fixed;
+		top: 0;
+		margin-top: 16px;
+	}
+
+	nav ul{
+		max-height: 0;
+		background: #000;
+	}
+
+	nav.black ul{
+		background: #000;
+		width: 100%;
+	}
+
+	.showing{
+		max-height: 33em;
+	}
+
+	nav ul li {
+		box-sizing: border-box;
+		width: 100%;
+		padding: 24px;
+		text-align: center;
+	}
+
+	.menu-icon{
+		display: block;
+	}
+}
